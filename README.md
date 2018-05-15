@@ -211,7 +211,7 @@ Great, now we can connect out, and receive bytes. But we need to be able to make
 To help us see this in effect, we'll use netcat. For a quick demo, open up two terminals. In on of them, run
 
 ```
-nc -lp 12345
+nc -l 12345
 ```
 
 This tells netcat to listen on port 12345. In the other one, run `nc localhost 12345`, which tells netcat to connect to port 12345 on your machine. You should now be able to type stuff in either terminal and have it show up in the other one. :-)
